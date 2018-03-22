@@ -12,3 +12,6 @@ loop_rate: 20
 # serial timeout
 sertout: 0.2
 
+# actual marker side length in milimeters (not currently used)
+markerlen: 142
+

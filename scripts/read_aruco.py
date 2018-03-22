@@ -16,6 +16,13 @@ class Aruco():
 		to						= rospy.get_param("sertout", 1.0)
 		self.ser			= serial.Serial(dev, baud,timeout=to)
 
+		# send camera configuration commands
+		#rospy.sleep(1.) # sleep for 1 sec to make sure port is open
+		# configure marker length
+		#markerlen = rospy.get_param("markerlen", 142)
+		#cmd = "setpar markerlen "+str(markerlen)
+		#self.ser.write(cmd)
+
 		self.DEBUG = rospy.get_param("debug", False)
 
 		# number of attempts to read from serial port before publishing to topic
