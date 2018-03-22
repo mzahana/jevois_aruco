@@ -1,0 +1,14 @@
+debug: False
+
+# Device address/baud
+dev: "/dev/ttyACM0"
+baud: 115200
+
+
+nAttempts: 10
+
+loop_rate: 20
+
+# serial timeout
+sertout: 0.2
+

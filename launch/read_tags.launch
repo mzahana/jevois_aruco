@@ -1,0 +1,6 @@
+<launch>
+	<rosparam command="load" file="$(find jevois_aruco)/config/setup.yaml" />
+
+<node pkg="jevois_aruco" type="read_aruco.py" name="read_arucos_node"  required="true" output="screen"/>
+
+</launch>
